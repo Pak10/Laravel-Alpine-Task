@@ -264,9 +264,13 @@
                         this.commentModal =  false;
                     }
                     else if(response.status == 422){
-                        console.log(response.body);
+                        alert("Please fill required fields");
+                    }
+                    else if(response.status == 403){
+                        alert("Unauthorised. Please login");
                     }
                 })
+                
                 .catch((error) => {
                     console.log(error);
                 });

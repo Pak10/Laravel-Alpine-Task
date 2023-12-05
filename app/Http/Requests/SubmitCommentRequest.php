@@ -25,7 +25,7 @@ class SubmitCommentRequest extends FormRequest
         return [
             
             'comment' => 'required|string',
-            'task_id' => 'required'
+      
         ];
     }
 }
